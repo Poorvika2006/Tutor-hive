@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.header {
+    background-color: #f197e2ea;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.search, .tutor-list, .booking {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input, button, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #5bf64d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #63beda;
+}
+.Submit { 
+    background-color: #101010;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.Submit:hover {
+    background-color: #0e0e0f;
+}
+.img {
+    padding: 20px;
+}
+.tutor {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

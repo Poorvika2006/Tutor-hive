@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor-Hive Platform</title>
+    <link rel="stylesheet" href="./style/tt.css">
+    <img src="./ttimage/tutor-hive-logo.JPG" class="img" alt="Image not found" width="500" height="400"/>
+</head>
+<body>
+    
+        <h1 class="header">Tutor-Hive Booking Platform</h1>
+
+    
+    <section class="search">
+        <h2>SEARCH</h2>
+        <input list="subjects" id="subject-input" placeholder="Enter or select a subject...">
+        <datalist id="subjects">
+            <option value="Mathematics"></option>
+            <option value="Science"></option>
+            <option value="English"></option>
+            <option value="History"></option>
+            <option value="Computer Science"></option>
+        </datalist>
+        <button>Search</button>
+    </section>
+    
+    <section class="tutor-list">
+        <h2>Available Tutors</h2>
+        <div class="tutor">
+            <h3>John Doe</h3>
+            <p>Subject: Mathematics</p>
+            <p>Available: Mon-Fri, 5PM-8PM</p>
+            <p>Fee: $20/hr</p>
+            <button onclick="showBooking('Tutor 1')">Book Now</button>
+        </div>
+        <div class="tutor">
+            <h3>Jane Smith</h3>
+            <p>Subject: Science</p>
+            <p>Available: Tue-Thu, 3PM-6PM</p>
+            <p>Fee: $25/hr</p>
+            <button onclick="showBooking('Tutor 2')">Book Now</button>
+        </div>
+    </section>
+    
+    <section class="booking" id="booking-section" style="display:none;">
+        <h2>Book a Session with <span id="tutor-name"></span></h2>
+        <label>Date:</label>
+        <input type="date">
+        <label>Time Slot:</label>
+        <select id="time-slot">
+            <option value="">Select a slot...</option>
+            <option value="9AM-10AM">9AM - 10AM</option>
+            <option value="10AM-11AM">10AM - 11AM</option>
+            <option value="11AM-12PM">11AM - 12PM</option>
+            <option value="2PM-3PM">2PM - 3PM</option>
+            <option value="3PM-4PM">3PM - 4PM</option>
+            <option value="5PM-6PM">5PM - 6PM</option>
+        </select>
+        <form name="Tutor-hive" method="post" data-netlify="true">
+        <label>Offer Fee:</label>
+        <input type="number" placeholder="Enter your offer...">
+        <button class="Submit">Submit</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tutor-Tutee Platform</p>
+    </footer>
+    
+    <script>
+        function showBooking(tutorName) {
+            document.getElementById('tutor-name').innerText = tutorName;
+            document.getElementById('booking-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
